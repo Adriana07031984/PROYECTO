@@ -1,0 +1,172 @@
+
+
+body {
+    background-image: url(/img/fondo3.png); /* Ruta a tu imagen */
+    background-repeat: repeat-y; /* Esto hará que la imagen se repita verticalmente */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área del body */
+}
+
+
+.mi-div {
+    background: #5fb478 url(/img/fondo3.png) no-repeat right center;
+   /*  background-image: url(/img/fondo2.jpg); Ruta a tu imagen */
+   /*  background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* background-position: center center; /* Centra la imagen horizontalmente y la coloca en la parte superior */
+    /* Otras combinaciones que puedes usar:
+       center center;  // Centra la imagen tanto vertical como horizontalmente
+       center bottom;  // Centra horizontalmente y coloca en la parte inferior
+       left center;    // Alinea a la izquierda y centra verticalmente
+       right bottom;   // Alinea a la derecha y coloca en la parte inferior
+    */
+    /* height: 100px; /* Ajusta la altura según tus necesidades */
+    /* width: 10%; /* Ajusta el ancho según tus necesidades */
+
+
+
+    /* 20xp /* Redondea las imagenes en los bordes */
+}
+.rounded-2 {
+    border-radius: 20px;
+  }
+
+
+
+  /* double /* Doble borde a los botones de seleccionar */
+  .form-select {
+    border: double;
+  }
+
+  .contact-title { text-align: center; font-size: 36px; color: #e70d94e7; padding: 20px 0; font-weight: bold; }
+  .form-control { margin-bottom: 10px; width: 100%; }
+  .btn { background-color: #ec10a3; color: rgb(7, 7, 7); }
+  .separator { border: none; height: 2px; width: 800px; margin: 30px auto; border-top: 4px dashed #ec10a3; }
+
+  hr {
+    border: none;
+    height: 4px;
+    width: 800px;
+    margin: 30px auto;
+    border-top: 4px dashed #080808;
+  }
+  
+  #modulo_contactenos {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ec10a3;
+    padding: 20px 0;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: #ec10a3;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+
+ 
+  
+  div {
+    text-align: center;
+  }
+
+/* /Estilos del parrafo */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+  
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  p {
+    text-align: center;
+    color: #ec10a3;
+    font-size:26px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    border-left: 4px solid #ec10a3;
+    padding-left: 20px;
+    font-style: italic;
+    color: #ec10a3;
+    margin: 0;
+  }
+
+
+  address {
+    font-style: normal;
+    line-height: 1.5;
+    padding: 20px 0;
+    color: #ec10a3;
+  }
+  
+  strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ec10a3;
+  }
+  
+  abbr {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ec10a3;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #ec10a3;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+
+  
+  .button-container {
+    display: flex; /* Utiliza flexbox para alinear los botones en una fila */
+    align-items: center; /* Alinea los botones verticalmente en el centro */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+}
+
+.btn-outline-success {
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    border: 1px solid #28a745; /* Borde verde */
+    background-color: transparent; /* Fondo transparente */
+    color: #28a745; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Fondo verde al pasar el mouse */
+    color: white; /* Color del texto blanco al pasar el mouse */
+}
+
+.button-primary {
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+
