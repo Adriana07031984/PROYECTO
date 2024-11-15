@@ -32,7 +32,7 @@ async function crear() {
             }),
         };
 
-        let urlApi = "http://127.0.0.1:4000/api/contacto";
+        let urlApi = "https://miproyectonodejs-production-a448.up.railway.app/api/contacto";
         // Acá disparo el fetch
         let response = await fetch(urlApi, fetchConfig);
         console.log("🚀 ~ actualizar ~ response:", response.status);

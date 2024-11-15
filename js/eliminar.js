@@ -22,7 +22,7 @@ async function eliminar() {
         "Content-Type": "application/json",
       },
     };
-    let urlApi = "http://127.0.0.1:4000/api/contacto/elimContacto/email/" + email;
+    let urlApi = "https://miproyectonodejs-production-a448.up.railway.app/api/contacto/elimContacto/email/" + email;
     //let urlApi = "https://jsonplaceholder.typicode.com/posts";
     let response = await fetch(urlApi, fetchConfig);
     if (response.ok) {

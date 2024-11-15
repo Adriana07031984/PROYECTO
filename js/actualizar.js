@@ -42,7 +42,7 @@ async function actualizar() {
     };
 
     // URL de la API para actualizar el contacto
-    let urlApi = "http://127.0.0.1:4000/api/contacto/editarContacto/";
+    let urlApi = "https://miproyectonodejs-production-a448.up.railway.app/api/contacto/editarContacto/";
 
     // Realizar la solicitud fetch
     let response = await fetch(urlApi, fetchConfig);
