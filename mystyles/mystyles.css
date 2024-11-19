@@ -58,9 +58,14 @@ body {
   h1 {
     text-align: center;
     font-size: 36px;
-    color: #ec10a3;
+    color: #ec10a3; /* Color principal del texto */
     padding: 20px 0;
-  }
+    text-shadow: 
+        1px 1px 0 #ffffff,  /* Sombra blanca en la esquina superior derecha */
+        -1px 1px 0 #ffffff, /* Sombra blanca en la esquina superior izquierda */
+        1px -1px 0 #ffffff, /* Sombra blanca en la esquina inferior derecha */
+        -1px -1px 0 #ffffff; /* Sombra blanca en la esquina inferior izquierda */
+}
 
   label {
     display: block;
@@ -92,6 +97,7 @@ body {
   
   .col-12 {
     flex: 0 0 100%;
+    color: #ec10a3;
     max-width: 100%;
     padding: 20px;
   }
@@ -114,11 +120,15 @@ body {
 
 
   address {
-    font-style: normal;
-    line-height: 1.5;
-    padding: 20px 0;
-    color: #ec10a3;
-  }
+    color: #ec10a3; /* Color del texto principal */
+    font-style: normal; /* Elimina la cursiva por defecto si no es deseada */
+    text-shadow: 
+        1px 1px 0 #ffffff,  /* Sombra blanca en la esquina superior derecha */
+        -1px 1px 0 #ffffff, /* Sombra blanca en la esquina superior izquierda */
+        1px -1px 0 #ffffff, /* Sombra blanca en la esquina inferior derecha */
+        -1px -1px 0 #ffffff; /* Sombra blanca en la esquina inferior izquierda */
+    text-align: center; /* Centrar el texto */
+}
   
   strong {
     font-size: 18px;
@@ -174,3 +184,74 @@ body {
   color: #632011; /* Cambia el código hexadecimal según el color que desees */
   font-weight: bold; /* Opcional: para resaltar el texto */
 }
+
+
+
+  .map-container {
+    width: 600px; /* Ajusta el ancho al tamaño del iframe */
+    height: 300px; /* Ajusta el alto al tamaño del iframe */
+    border-radius: 15px; /* Define los bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no exceda los bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Agrega un sombreado elegante */
+    margin: 0 auto; /* Centra horizontalmente el mapa */
+  }
+
+
+ 
+  .custom-container {
+    background-color: #5858db; /* Cambia este color al que prefieras */
+    border-radius: 15px; /* Opcional: Añade bordes redondeados */
+    padding: 20px; /* Opcional: Agrega un espacio interno */
+  }
+
+
+  
+  .highlight-text {
+      background-color: #ec10a3; /* Fondo naranja */
+      color: white;             /* Texto blanco */
+      padding: 10px 20px;       /* Espaciado interno */
+      border-radius: 8px;       /* Bordes redondeados */
+      display: inline-block;    /* Ajusta el ancho al contenido */
+  }
+
+
+  .image-container {
+    display: inline-block;
+    text-align: center;
+    max-width: 600px; /* Ancho máximo, basado en la imagen */
+}
+
+/* Estilo del botón */
+/* Cambiar el color de la letra del botón */
+.btn-house {
+  padding: 10px 20px;
+  border-radius: 50%; /* Esto hace que el botón tenga forma redonda */
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f2f1; /* Aquí se cambia el color de la letra */
+}
+
+/* Cambiar el color del icono */
+.btn-house i.fas.fa-home {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Color de texto del botón cuando pasa el mouse */
+.btn-house:hover {
+  background-color: #007bff; /* Color de fondo al hacer hover */
+  border-color: #0056b3;
+  color: white; /* El color de la letra cambiará a blanco al pasar el mouse */
+}
+
+.custom-bg {
+  background-color: #ec10a3; /* Puedes cambiar el color de fondo */
+  color: white; /* Color de texto */
+  padding: 20px; /* Espacio alrededor del texto */
+  border-radius: 12px; /* Bordes redondeados */
+  font-size: 1.25rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Peso de la fuente */
+}
+

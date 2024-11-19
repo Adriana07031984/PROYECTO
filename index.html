@@ -65,17 +65,19 @@
 
 <body>
 	
-	<div class="container my-5">
+	<div class="container my-5"> 
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8 text-center">
 				<!-- Tarjeta que envuelve el contenido -->
 				<div class="card shadow-lg rounded-3 border-0">
 					<div class="card-body p-4">
-						<!-- Imagen responsiva con bordes redondeados -->
-						<img src="/img/logox.png" class="img-fluid rounded-3 border border-primary mb-4" alt="Domotica Dallos: Imagen generada con IA en Design.com">
-						<!-- Título -->
-						<h1 class="display-4 text-info font-weight-bold mb-3">Domótica Dallos</h1>
-
+						<!-- Contenedor con fondo para la imagen -->
+						<div class="p-4" style="background-color: #5858db; border-radius: 15px;">
+							<!-- Imagen responsiva con bordes redondeados -->
+							<img src="/img/logox.png" class="img-fluid rounded-3 border border-primary mb-4" alt="Domotica Dallos: Imagen generada con IA en Design.com">
+						</div>
+					
+						<!-- Tarjeta de contenido adicional -->
 						<div class="card shadow-lg rounded-3 border-0 bg-light">
 							<div class="card-body p-4">
 								<!-- Contenido aquí -->
@@ -83,33 +85,34 @@
 						</div>
 	
 						<!-- Descripción con fondo y texto contrastante -->
-						<p class="bg-danger text-white p-3 rounded-2 lead">
+						<p class="custom-bg">
 							Automatiza tu hogar con la última tecnología en domótica
-						</p>
+						  </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
         
-		<div class="separator my-5">
-			<hr class="border-top border-primary border-4 opacity-75">
-		</div>
-   
+	<div class="separator my-5">
+		<hr class="border-top border-primary border-4 opacity-75">
+	</div>
+
 		
 	
 
 <!-- Parrafo de introducción a la empresa -->
-<div class="container my-5">
+<div class="container my-5 custom-container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow-lg rounded border-0">
-                <div class="card-body bg-light p-5">
+                <div class="card-body bg-light p-1">
                     <h2 class="card-title text-center text-primary font-weight-bold mb-4">Sobre Nosotros</h2>
                     <p class="card-text text-muted mb-4" style="font-size: 1.1rem; line-height: 1.6;">
                         Domótica Dallos es una empresa líder en el sector de la domótica, especializada en la automatización de hogares y edificios. Desde su fundación en 2015, ha trabajado incansablemente para ofrecer soluciones innovadoras que mejoran la calidad de vida de sus clientes a través de la tecnología.
                     </p>
-                    <blockquote class="blockquote text-right mb-0" style="font-style: italic; border-left: 4px solid #007bff; padding-left: 20px;">
+                    <blockquote class="blockquote text-right mb-0" style="font-style: italic; border-left: 4px solid #007bff; padding-left: 1px;">
                         <p class="mb-0">"La tecnología al servicio de tu hogar."</p>
                         <footer class="blockquote-footer text-muted">
                             <cite title="Source Title">Domótica Dallos en <span class="text-primary">Ecosonics</span></cite>
@@ -120,25 +123,26 @@
         </div>
     </div>
 </div>
-
     <!-- Enlace a otra página o sitio web --> 
-		<div class="container"> 
-			<div class="row"> 
-				<div class="col-12 text-center"> 
-					 <a href="https://www.ecosonics.com.co/domotica/" 
-					 target="_blank" class="btn btn-primary">Visitar Domotica Dallos 
-					 <i class="fas fa-external-link-alt"></i></a> 
-					</div> 
-				</div>
-				<div class="separator my-5">
-					<hr class="border-top border-primary border-4 opacity-75">
-				</div>
-			   
+	<div class="container"> 
+		<div class="row"> 
+		  <div class="col-12 text-center"> 
+			<a href="https://www.ecosonics.com.co/domotica/" 
+			   target="_blank" class="btn btn-primary btn-house">
+			  <i class="fas fa-home"></i> Visitar Domotica Dallos 
+			  <i class="fas fa-external-link-alt"></i>
+			</a> 
+		  </div> 
+		</div>
+		<div class="separator my-5">
+		  <hr class="border-top border-primary border-4 opacity-75">
+		</div>
+	  </div>
 
      <!-- Imagen Principal -->
 	 <div class="row">
 		<div class="col-12 text-center">
-			<strong class="d-block bg-danger text-white py-2">Tu casa espera para ser automatizada</strong>
+			<strong class="highlight-text">Tu casa espera para ser automatizada</strong><br>
 			<img src="/img/futurista-smart-home.jpg" class="img-fluid" alt="Domotica Futurista Generado por IA">
 		</div>
 	</div>
@@ -161,10 +165,10 @@
 
 
 <!-- tabla -->
-<section class="container text-center my-5" >
-    <h1 style="color: #f00eb7;">Nuestros Dispositivos Disponibles</h1><br>
-    <table class="table table-hover" style="background-color: #0d0d0e; color: #ffffff;">
-        <thead style="background-color: #6da3da; color: #f8f9fa;">
+<section class="container text-center my-5">
+    <h1>Nuestros Dispositivos Disponibles</h1>
+    <table class="table table-hover" style="background-color: #5858db; color: #ffffff; border-radius: 15px; overflow: hidden;">
+        <thead style="background-color: #f31e9a; color: #f8f9fa;">
             <tr>
                 <th>Dispositivo</th>
                 <th>Función</th>
@@ -176,10 +180,10 @@
         </thead>
 		<tbody>
 			<tr>
-				<td style="color: rgb(10, 245, 88);">Termostato Inteligente</td>
-				<td style="color: rgb(10, 245, 88);">Controlar la temperatura del hogar</td>
-				<td style="color: rgb(10, 245, 88);">Wifi, Zigbee</td>
-				<td style="color: rgb(10, 245, 88);">Sí</td>
+				<td style="color: rgb(245, 248, 246);">Termostato Inteligente</td>
+				<td style="color: rgb(245, 248, 246);">Controlar la temperatura del hogar</td>
+				<td style="color: rgb(245, 248, 246);">Wifi, Zigbee</td>
+				<td style="color: rgb(245, 248, 246);">Sí</td>
 				<td><img src="/img/Termostato_Inteligente_.jpg" class="img-thumbnail" width="100"></td>
 				<td>
 					<select class="form-select">
@@ -190,10 +194,10 @@
 				</td>
 			</tr>
 				<tr>
-				<td style="color: rgb(10, 245, 88);">Enchufe Inteligente</td>
-				<td style="color: rgb(10, 245, 88);">Controlar dispositivos eléctricos</td>
-				<td style="color: rgb(10, 245, 88);">Wifi, Zigbee</td>
-				<td style="color: rgb(10, 245, 88);">Sí</td>
+				<td style="color: rgb(245, 248, 246);">Enchufe Inteligente</td>
+				<td style="color: rgb(245, 248, 246);">Controlar dispositivos eléctricos</td>
+				<td style="color: rgb(245, 248, 246);">Wifi, Zigbee</td>
+				<td style="color: rgb(245, 248, 246);">Sí</td>
 				<td><img src="/img/Enchufe_Inteligente.webp" class="img-thumbnail" width="100"></td>
 				<td>
 					<select class="form-select">
@@ -204,10 +208,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="color: rgb(10, 245, 88);">Bombilla Inteligente</td>
-				<td style="color: rgb(10, 245, 88);">Iluminación controlada</td>
-				<td style="color: rgb(10, 245, 88);">Wifi</td>
-				<td style="color: rgb(10, 245, 88);">Sí</td>
+				<td style="color: rgb(245, 248, 246);">Bombilla Inteligente</td>
+				<td style="color: rgb(245, 248, 246);">Iluminación controlada</td>
+				<td style="color: rgb(245, 248, 246);">Wifi</td>
+				<td style="color: rgb(245, 248, 246);">Sí</td>
 				<td><img src="/img/Bombilla_Inteligente.avif" class="img-thumbnail" width="100"></td>
 				<td>
 					<select class="form-select">
@@ -218,10 +222,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="color: rgb(10, 245, 88);">Sensor de Movimiento</td>
-				<td style="color: rgb(10, 245, 88);">Detección de movimiento para seguridad</td>
-				<td style="color: rgb(10, 245, 88);">Wifi</td>
-				<td style="color: rgb(10, 245, 88);">Sí</td>
+				<td style="color: rgb(245, 248, 246);">Sensor de Movimiento</td>
+				<td style="color: rgb(245, 248, 246);">Detección de movimiento para seguridad</td>
+				<td style="color: rgb(245, 248, 246);">Wifi</td>
+				<td style="color: rgb(245, 248, 246);">Sí</td>
 				<td><img src="/img/Sensor_Movimiento.webp" class="img-thumbnail" width="100"></td>
 				<td>
 					<select class="form-select">
@@ -232,10 +236,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="color: rgb(10, 245, 88);">Cámara de Seguridad</td>
-				<td style="color: rgb(10, 245, 88);">Vigilancia y monitoreo del hogar</td>
-				<td style="color: rgb(10, 245, 88);">Wifi, Zigbee</td>
-				<td style="color: rgb(10, 245, 88);">Sí</td>
+				<td style="color: rgb(245, 248, 246);">Cámara de Seguridad</td>
+				<td style="color: rgb(245, 248, 246);">Vigilancia y monitoreo del hogar</td>
+				<td style="color: rgb(245, 248, 246);">Wifi, Zigbee</td>
+				<td style="color: rgb(245, 248, 246);">Sí</td>
 				<td><img src="/img/Camara_Seguridad.jfif" class="img-thumbnail" width="100"></td>
 				<td>
 					<select class="form-select">
@@ -294,25 +298,25 @@
 
 <!-- IFRAME -->
 <h1>Ubiquenos</h1>
-<div>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63625.981055141325!2d-74.13670814975549!3d4.660981399271022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af5539e0589%3A0x58f8536449f01c72!2sCentro%20Comercial%20Andino!5e0!3m2!1ses-419!2sco!4v1725413623189!5m2!1ses-419!2sco"
-    width="600" height="300"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+<div class="map-container">
+	<iframe
+	  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63625.981055141325!2d-74.13670814975549!3d4.660981399271022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af5539e0589%3A0x58f8536449f01c72!2sCentro%20Comercial%20Andino!5e0!3m2!1ses-419!2sco!4v1725413623189!5m2!1ses-419!2sco"
+	  width="600" height="300"
+	  referrerpolicy="no-referrer-when-downgrade" style="border: 0;">
+	</iframe>
+  </div>
 
 <div class="separator"></div>
 
  <!-- Address -->
  <div class="d-flex justify-content-center align-items-center" style="height: 200px; text-align: center;">
-    <!-- Address -->
-    <address>
-        <strong>Domotica Dallos</strong><br>
-        Colombia, Calle 16 # 15 - 12<br>
-        Bogotá, Colombia<br>
-        <abbr title="Phone">Contacto:</abbr> +57 01 234 567
-    </address>
+   
+	<address>
+		<strong>Domotica Dallos</strong><br>
+		Colombia, Calle 16 # 15 - 12<br>
+		Bogotá, Colombia<br>
+		<abbr title="Phone">Contacto:</abbr> +57 01 234 567
+	</address>
 </div>
 
 </body>
