@@ -170,3 +170,7 @@ body {
 
 
 
+.text-custom {
+  color: #632011; /* Cambia el código hexadecimal según el color que desees */
+  font-weight: bold; /* Opcional: para resaltar el texto */
+}
